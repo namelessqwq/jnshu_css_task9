@@ -1,0 +1,465 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #333;
+}
+
+/* header部分 */
+.header {
+  height: 39px;
+  font-size: 0;
+}
+
+.header .tel {
+  line-height: 39px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #2AB078;
+}
+
+.header .contact ,.header .contact ul{
+  height: 100%;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.header .contact ul li {
+  width: 25px; 
+  height: 24px;
+  float: right;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+
+}
+
+.header .contact ul li:nth-child(3) {
+  background-image: url(../../img/icon_wechat.png);
+}
+
+.header .contact ul li:nth-child(2) {
+  background-image: url(../../img/icon_qq.png);
+}
+
+.header .contact ul li:nth-child(1) {
+  background-image: url(../../img/icon_weibo.png);
+}
+
+/* nav部分 */
+.nav {
+  width: 100%;
+  height: 100px;
+  font-size: 0;
+  background-color: #2AB078;
+}
+
+.nav a {
+  padding: 0;
+  margin: 0;
+  line-height: 100px;
+  color: #fff;
+}
+
+.nav .nav_bar {
+  height: 100%;
+}
+
+
+.nav .nav_bar ul li {
+  float: right;
+  font-size: 17px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 100.9px;
+  height: 100px;
+  border-bottom: 4px solid #2AB078;
+  text-align: center;
+}
+
+.nav .nav_bar ul li:last-child {
+  border-bottom: 4px solid #fff;
+}
+
+/* main部分 */
+.main {
+  background-color: #fafafa;
+}
+
+.main .topic {
+  width: 100%;
+  border-bottom: 1px solid #D0D6D9;
+  margin-top: 31px;
+  padding-bottom: 32px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+}
+
+.main .topic .green {
+  color: #29B078;
+}
+
+.main .bar {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 14px;
+  border-bottom: 1px solid #EDF1F2;
+}
+
+.main .bar ul {
+  display: flex;
+  padding: 0;
+}
+
+.main .bar ul li{
+  margin-right: 35px;
+  padding: 2px;
+}
+
+.main .profile{
+  position: relative;
+
+}
+
+@keyframes mouseHover{
+  0%   {background: rgba(0, 0, 0, 0.16);}
+  25%  {background: rgba(0, 0, 0, 0.26);}
+  50%  {background: rgba(0, 0, 0, 0.46);}
+  75%  {background: rgba(0, 0, 0, 0.66);}
+  100% {background: rgba(0, 0, 0, 0.76);}
+}
+
+.main .content div[class^="job_"] ul li:hover .profile:after{
+  background: rgba(0, 0, 0, 0.76);
+  box-shadow: 1px 1px 3px 0px rgba(9, 2, 3, 0.15);
+  z-index: 10;
+  width: 372px;
+  height: 444px;
+  padding-top: 139px;
+  padding-left: 41px;
+  padding-right: 41px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属 于类Unix的商业操作系统。国内iOS开 发起步相对较晚，人才培养机制更是远 远跟不上市场发展速度。有限的iOS开 发人才成了国内企业必争的资源。国内 iOS开发起步相对较晚，人才培养机制 更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。";
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  animation:mouseHover 0.3s;
+  -webkit-animation:mouseHover 0.3s;
+}
+
+.main .content div[class^="job_"] ul li:hover .profile:before{
+  position: absolute;
+  top: 86px;
+  left: 140px;
+  content: "iOS工程师";
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  z-index: 20;
+}
+
+.main .bar ul li:nth-child(1){
+  margin-right: 29px;
+  color: #999;
+}
+
+.main .bar ul li:nth-child(2){
+  background-color: #29B078;
+}
+
+.main .bar ul li:nth-child(2) a{
+  color: #fff;
+}
+
+.main .content div[class^="job_"] > div:nth-child(1) {
+  padding-top: 32px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #D0D6DA;
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
+}
+
+.main .content div[class^="job_"] ul {
+  display: flex;
+  padding: 0;
+  margin-top: 47px;
+  margin-bottom: 32px;
+}
+
+.main .content div[class^="job_"] ul li {
+  width: 372px;
+  height: 444px;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 3px 0px rgba(9, 2, 3, 0.15);
+  border-radius: 3px;
+}
+
+.main .content div[class^="job_"] ul li:nth-child(2) {
+  margin: 0 27px;
+}
+
+.main .content div[class^="job_"] ul li .profile {
+  height: 175px;
+}
+
+.main .content div[class^="job_"] ul li .profile .avatar {
+  width: 139px;
+  height: 139px;
+  background-image: url(../../img/jobs/avatar.png);
+  float: left;
+  margin: 20px 8px 16px 10px;
+}
+
+
+.main .content div[class^="job_"] ul li .profile p:nth-child(2) {
+  padding-top: 34px;
+  font-weight: bold;
+  color: #343434;
+  font-size: 16px;
+}
+
+.main .content div[class^="job_"] ul li .profile p:nth-child(3) {
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: #343434;
+  word-break: break-all;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid > div > div {
+  border: 1px solid #EDF1F2;
+  line-height: 40px;
+  font-size: 12px;
+  color: #999;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid > div .icon {
+  width: 16px;
+  height: 15px;
+  background-image: url(../../img/jobs/star.png);
+  display: inline-block;
+  margin-left: 6px;
+  position: relative;
+  top: 2px;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid > div .text {
+  color: #F01400;
+  font-weight: bold;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid > div .wage {
+  height: 105px;
+  padding: 0;
+  text-align: center;
+  line-height: 105px;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid .col-sm-7 {
+  padding: 0;
+  height: 105px;
+}
+
+
+.main .content div[class^="job_"] ul li .container-fluid .col-sm-7 > div {
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  color: #333;
+  font-size: 12px;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid .col-sm-7 > div:nth-child(2) {
+  border-top: 1px solid #EDF1F2;
+  border-bottom: 1px solid #EDF1F2;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid > div .col-sm-7 > div > p:nth-child(1) {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main .content div[class^="job_"] ul li .container-fluid > div .col-sm-7 > div > p:nth-child(2) {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main .content div[class^="job_"] ul li .container-fluid .total {
+  height: 38px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: #333333;
+}
+
+.main .content div[class^="job_"] ul li .container-fluid .tip {
+  font-size: 12px;
+  color: #999999;
+  border: none;
+  padding: 0;
+}
+
+
+/* footer部分 */
+.footer .title {
+  margin-top: 21px;
+  margin-bottom: 28px;
+}
+
+.footer .link ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer .link ul li{
+  list-style: disc;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: #999999;
+  line-height: 30px;
+  margin-right: 80px;
+}
+
+.footer .end {
+  height: 200px;
+  width: 100%;
+  background-color: #26A270;
+}
+
+.footer .information {
+  position: relative;
+  height: 170px;
+}
+
+.footer .end .topic {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 12px;
+  position: absolute;
+  top: 37px;
+}
+
+.footer .end .web {
+  position: absolute;
+  top: 36px;
+  left: 363px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 12px;
+}
+
+.footer .end .about_us ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .end .about_us ul li{
+  float: left;
+  margin-top: 121px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 16px;
+}
+
+.footer .end .about_us ul li:nth-child(2){
+  padding: 0 10px;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.footer .end .about_us ul li:nth-child(3){
+  padding-left: 10px;
+}
+
+.footer .end .about_us ul li:nth-child(1){
+  padding-right: 10px;
+}
+
+.footer .end .web_link span{
+  position: absolute;
+  top: 82px;
+  left: 363px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 12px;
+}
+
+.footer .end .web_link span:nth-child(2) {
+  left: 481px;
+}
+
+.footer .end .web_link span:nth-child(3) {
+  top: 123px;
+}
+
+.footer .end .web_link span:nth-child(4) {
+  left: 481px;
+  top: 123px;
+}
+
+.footer .end .vx .topic{
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+.footer .end .vx .icon{
+  width: 92px;
+  height: 92px;
+  background-image: url(../../img/vx.png);
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 12px;
+  padding-top: 7px;
+  border-top: 1px solid #33C086;
+}

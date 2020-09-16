@@ -1,0 +1,362 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #333;
+}
+
+/* header部分 */
+.header {
+  height: 39px;
+  font-size: 0;
+}
+
+.header .tel {
+  line-height: 39px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #2AB078;
+}
+
+.header .contact ,.header .contact ul{
+  height: 100%;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.header .contact ul li {
+  width: 25px; 
+  height: 24px;
+  float: right;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  margin-left: 16px;
+
+}
+
+.header .contact ul li:nth-child(3) {
+  background-image: url(../../img/icon_wechat.png);
+}
+
+.header .contact ul li:nth-child(2) {
+  background-image: url(../../img/icon_qq.png);
+}
+
+.header .contact ul li:nth-child(1) {
+  background-image: url(../../img/icon_weibo.png);
+}
+
+/* nav部分 */
+.nav {
+  width: 100%;
+  height: 100px;
+  font-size: 0;
+  background-color: #2AB078;
+}
+
+.nav a {
+  padding: 0;
+  margin: 0;
+  line-height: 100px;
+  color: #fff;
+}
+
+.nav .nav_bar {
+  height: 100%;
+}
+
+
+.nav .nav_bar ul li {
+  float: right;
+  font-size: 17px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 100.9px;
+  height: 100px;
+  border-bottom: 4px solid #2AB078;
+  text-align: center;
+}
+
+.nav .nav_bar ul li:last-child {
+  border-bottom: 4px solid #fff;
+}
+
+/* banner部分 */
+.banner {
+  width: 100%;
+  height: 248px;
+  background-image: url(../../img/co-opration/banner.png);
+}
+
+/* main部分 */
+.main {
+  background-color: #fafafa;
+  height: 1413px;
+}
+
+.main .topic {
+  color: #333333;
+  font-size: 16px;
+  margin-top: 32px;
+  margin-bottom: 29px;
+}
+
+.main .green {
+  color: #29B078;
+}
+
+.main .partners {
+  width: 304px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 708px;
+  float: left;
+}
+
+.main .partners .topic {
+  color: #333;
+  font-size: 22px;
+  height: 62px;
+  text-align: center;
+  line-height: 62px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.main .partners ul {
+  padding: 0;
+}
+
+.main .partners ul li{
+  line-height: 48px;
+  color: #29B078;
+  font-size: 14px;
+  padding-left: 115px;
+}
+
+.main .partners ul li:nth-child(3):before{
+  background-image: url(../../img/co-opration/checked.png);
+  background-repeat: no-repeat;
+}
+
+.main .partners ul li:nth-child(3){
+  color: #FF660E;
+}
+
+.main .partners ul li:before{
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-image: url(../../img/co-opration/unchecked.png);
+  background-repeat: no-repeat;
+  content: "";
+  margin-right: 5px;
+}
+
+.main .introduction {
+  width: 870px;
+  height: 1101px;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 3px 0px rgba(9, 2, 3, 0.15);
+  border-radius: 4px;
+  float: right;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #9A9A9A;
+}
+
+.main .introduction .top_introduction {
+  height: 156px;
+  border-bottom: 1px solid #E6E6E6;
+
+}
+
+.main .introduction .top_introduction .icon{
+  width: 134px;
+  height: 122px;
+  background: url(../../img/co-opration/tudou.png) no-repeat;
+  margin-top: 18px;
+  margin-left: 84px;
+  background-position-x: -50px;
+  background-position-y: -20px;
+  float: left;
+  margin-right: 25px;
+} 
+
+.main .introduction .top_introduction p {
+  padding-right: 64px;
+  padding-top: 25px;
+}
+
+.main .introduction > p {
+  padding: 0 68px;
+  margin-top: 38px;
+}
+
+.main .introduction:after {
+  clear: both;
+  display: table;
+  content: "";
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 230px;
+}
+
+/* footer部分 */
+.footer .title {
+  margin-top: 21px;
+  margin-bottom: 28px;
+}
+
+.footer .link ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.footer .link ul li{
+  list-style: disc;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: #999999;
+  line-height: 30px;
+  margin-right: 80px;
+}
+
+.footer .end {
+  height: 200px;
+  width: 100%;
+  background-color: #26A270;
+}
+
+.footer .information {
+  position: relative;
+  height: 170px;
+}
+
+.footer .end .topic {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 12px;
+  position: absolute;
+  top: 37px;
+}
+
+.footer .end .web {
+  position: absolute;
+  top: 36px;
+  left: 363px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 12px;
+}
+
+.footer .end .about_us ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .end .about_us ul li{
+  float: left;
+  margin-top: 121px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 16px;
+}
+
+.footer .end .about_us ul li:nth-child(2){
+  padding: 0 10px;
+  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.footer .end .about_us ul li:nth-child(3){
+  padding-left: 10px;
+}
+
+.footer .end .about_us ul li:nth-child(1){
+  padding-right: 10px;
+}
+
+.footer .end .web_link span{
+  position: absolute;
+  top: 82px;
+  left: 363px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  color: #FFFFFF;
+  line-height: 12px;
+}
+
+.footer .end .web_link span:nth-child(2) {
+  left: 481px;
+}
+
+.footer .end .web_link span:nth-child(3) {
+  top: 123px;
+}
+
+.footer .end .web_link span:nth-child(4) {
+  left: 481px;
+  top: 123px;
+}
+
+.footer .end .vx .topic{
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+.footer .end .vx .icon{
+  width: 92px;
+  height: 92px;
+  background-image: url(../../img/vx.png);
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 12px;
+  padding-top: 7px;
+  border-top: 1px solid #33C086;
+}

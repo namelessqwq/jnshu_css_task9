@@ -1,0 +1,86 @@
+/* header部分 */
+.header {
+  display: none;
+}
+
+.mobile_header {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  position: relative;
+
+}
+
+.mobile_header span{
+  float: right;
+  padding-right: 8px;
+  padding-left: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.mobile_header span a {
+  color: #000;
+}
+
+.mobile_header span:nth-child(2){
+  border-right: 1px solid #2AB078;
+  right: 55px;
+}
+
+/* nav部分 */
+.nav {
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.mobile_icon {
+  position: absolute;
+  max-width: 200px;
+  width: auto;
+  /* height: 100%; */
+  height: auto;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.menu_bar {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgb(38, 162, 111);
+  border-radius: 4px;
+}
+
+.menu_bar img{
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  /* display: none; */
+  background-color: #2AB078;
+}
+
+.menu ul{
+  padding: 0;
+}
+  
+.menu li{
+  height: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+.menu ul li a {
+  line-height: 40pxs;
+}
