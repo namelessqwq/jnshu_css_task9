@@ -108,6 +108,11 @@ a:link {
   border-bottom: 4px solid #fff;
 }
 
+.menu {
+  display: none;
+  background-color: #2AB078;
+}
+
 /* main部分 */
 .main {
  background-color: #fafafa;
@@ -306,6 +311,11 @@ a:link {
   background-image: url(../img/next.png);
   margin-right: 20px;
 }
+
+.main .how_to_learn div[class*="process_"] .icon:nth-child(12) {
+  display: none;
+}
+
 
 /* main 展示部分 */
 .main .student_show {

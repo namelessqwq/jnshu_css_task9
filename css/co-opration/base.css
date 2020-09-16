@@ -106,6 +106,14 @@ a:visited {
   border-bottom: 4px solid #fff;
 }
 
+.menu_bar,
+.nav img,
+.mobile_header,
+.menu {
+  display: none;
+}
+
+
 /* banner部分 */
 .banner {
   width: 100%;

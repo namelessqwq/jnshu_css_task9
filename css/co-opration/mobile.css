@@ -41,6 +41,8 @@
   right: 55px;
 }
 
+
+
 /* nav部分 */
 .nav {
   width: 100%;
@@ -50,6 +52,12 @@
 
 .nav_bar {
   display: none;
+}
+
+.menu_bar,
+.nav img,
+.mobile_header {
+  display: block;
 }
 
 .mobile_icon {
@@ -80,10 +88,14 @@
   height: 20px;
 }
 
+.menu {
+  display: none;
+}
 
 .menu ul{
   padding: 0;
   margin: 0;
+  background-color: #2AB078;
 }
 
 .menu ul::before{
@@ -109,84 +121,62 @@
   background-color: #38c58a;
 }
 
+/* banner部分 */
+.banner img{
+  width: auto;
+  height: auto; 
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+.banner {
+  background-image: none;
+  height: auto;
+}
+
 /* main部分 */
 .main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  padding-top: 20px;
+  height: auto;
+  padding-bottom: 20px;
 }
 
-.main .character {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-
-.main .statistic .data {
-  position: absolute;
-  top: 50%;
+.main .partners {
+  position: relative;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
+  float: none;
 }
 
-.main .how_to_learn div[class*="process_"] {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  padding-left: 20px;
-}
-
-.main .how_to_learn div[class*="process_"] > div{
-  width: auto;
-  height: auto;
-  margin-bottom: 20px;
-
-}
-
-.main .how_to_learn div[class*="process_"] .step {
-  width: 70px;
-  height: 70px;
-  /* display: none; */
-}
-
-.main .how_to_learn div[class*="process_"] .text {
+.main .introduction {
+  float: none;
   width: auto;
   height: auto;
 }
 
-.main .how_to_learn div[class*="process_"] .icon:nth-child(12) {
-  display: block;
-}
-
-.student {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-}
-
-.student_show .student div[class*="stu_"] {
+/* .main .introduction  .top_introduction .icon,
+.main .introduction  .top_introductionp {
+  float: none;
   margin: 0;
-  margin-bottom: 10px;
-}
-
-.main .business_partners ul{
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-.main .business_partners ul li{
   padding: 0;
-  margin: 0;
+  background-position: none;
+  height: auto;
 }
+
+.main .introduction  .top_introduction .icon {
+  height: 177px;
+  background-position: 0 0;
+}
+
+.main .introduction  .top_introduction {
+  width: 100%;
+} */
+
+.main .introduction {
+  display: none;
+}
+
+
+
 
 /* footer部分 */
 .footer .link ul li,
@@ -228,4 +218,3 @@
   text-align: center;
   line-height: normal;
 }
-
